@@ -15,11 +15,7 @@ export class DataBindingComponentComponent implements OnInit {
   }
 
   isUsernameEmpty() {
-    if (this.username === '') {
-      return true;
-    } else {
-      return false;
-    }
+    return this.username === '';
   }
 
   resetUsername() {
