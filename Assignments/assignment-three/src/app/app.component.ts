@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  paragraphHidden=false;
+  btnClickNumbers = [];
+
+  buttonClicked() {
+    this.toggleDisplay();
+    this.btnClickNumbers.push(this.btnClickNumbers.length + 1);
+
+  }
+  toggleDisplay() {
+    this.paragraphHidden = !this.paragraphHidden;
+  }
+
 }
